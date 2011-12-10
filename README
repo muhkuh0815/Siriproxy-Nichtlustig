@@ -1,0 +1,27 @@
+#######
+# 
+# This is a simple Plugin which display a cartoon JPG from the german www.nichtlustig.de site 
+# sorry for the strange code - im just learning Ruby :-) 
+#
+#     Remember to add other plugins to the "config.yml" file if you create them!
+#
+######
+#
+# Das ist ein einfaches plugin, welches eine Cartoonbild von www.nichtlustig.de anzeigt
+# 
+#      ladet das Plugin in der "config.yml" datei !
+#
+########
+## ## ##  WIE ES FUNKTIONIERT 
+#
+## # Syntax
+#
+# sagt einfach einen Satz mit "Testbild" für das aktuellste nichtlustig Bild
+# 
+# oder "Zufallsbild" für ein zufälliges Bild (2000-2011)
+#
+#### ToDo
+#
+# .jpg auf gesamte Breite stretchen - aber k.a. wie :-) 
+#
+######
