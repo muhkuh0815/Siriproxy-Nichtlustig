@@ -3,29 +3,30 @@
 # This is a simple Plugin which display a cartoon JPG from the german www.nichtlustig.de site 
 # sorry for the strange code - im just learning Ruby :-) 
 #
-#     Remember to add other plugins to the "config.yml" file if you create them!
+#     Remember to add the plugin to the "./siriproxy/config.yml" file
 #
 ######
 #
 # Das ist ein einfaches plugin, welches eine Cartoonbild von www.nichtlustig.de anzeigt
 # 
-#      ladet das Plugin in der "config.yml" datei !
+#      ladet das Plugin in der "./siriproxy/config.yml" datei !
 #
 ########
 ## ## ##  WIE ES FUNKTIONIERT 
 #
 ## # Syntax
 #
-# sagt einfach einen Satz mit "Testbild" für das aktuellste nichtlustig Bild
+# sagt einfach einen Satz mit "Testbild" f√ºr das aktuellste nichtlustig Bild
 # 
-# oder "Zufallsbild" für ein zufälliges Bild (2000-2011)
+# oder "Zufallsbild" f√ºr ein zuf√§lliges Bild (2000-2011)
 #
-#
-# bei Fragen Twitter: @Muhkuh0815
+# 
+# bei Fragen Twitter: @muhkuh0815
 # oder github.com/muhkuh0815/SiriProxy-Nichtlustig
 #
 #### ToDo
 #
 # .jpg auf gesamte Breite stretchen - aber k.a. wie :-) 
+# andere Kommandos zum abrufen 
 #
 ######

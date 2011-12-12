@@ -12,13 +12,13 @@ require 'httparty'
 # This is a simple Plugin which display a cartoon JPG from the german www.nichtlustig.de site 
 # sorry for the strange code - im just learning Ruby :-) 
 #
-#     Remember to add other plugins to the "config.yml" file if you create them!
+#     Remember to add the plugin to the "./siriproxy/config.yml" file
 #
 ######
 #
 # Das ist ein einfaches plugin, welches eine Cartoonbild von www.nichtlustig.de anzeigt
 # 
-#      ladet das Plugin in der "config.yml" datei !
+#      ladet das Plugin in der "./siriproxy/config.yml" datei !
 #
 ########
 ## ## ##  WIE ES FUNKTIONIERT 
@@ -28,6 +28,10 @@ require 'httparty'
 # sagt einfach einen Satz mit "Testbild" für das aktuellste nichtlustig Bild
 # 
 # oder "Zufallsbild" für ein zufälliges Bild (2000-2011)
+#
+# 
+# bei Fragen Twitter: @muhkuh0815
+# oder github.com/muhkuh0815/SiriProxy-Nichtlustig
 #
 #### ToDo
 #
@@ -46,7 +50,7 @@ class SiriProxy::Plugin::Nichtlustig < SiriProxy::Plugin
     end
     def docs
     end
-    def zuza(zz)
+    def zuza(zz) # generating filename
     ja = rand(12)
     mo = 1+rand(12)
     ta = 1+rand(31)
@@ -63,7 +67,7 @@ class SiriProxy::Plugin::Nichtlustig < SiriProxy::Plugin
     return zz
     end
     
-# Nichtlustig zufälliges Bild
+# Nichtlustig zufälliges Bild - show random image
     
 listen_for /(Zufallsbild|zufalls bild|zufallbild|zufall bild|zufallsbedingt)/i do
     zz = zuza(zz)    
@@ -123,7 +127,7 @@ listen_for /(Zufallsbild|zufalls bild|zufallbild|zufall bild|zufallsbedingt)/i d
     request_completed
 end
 
-# Nichtlustig aktuelles Bild
+# Nichtlustig aktuelles Bild - show latest cartoon
     
 listen_for /(Bildtest|Bild Test|Test Bild|testbild)/i do
     begin
